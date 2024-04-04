@@ -24,8 +24,12 @@ public class NoTransactionsService {
 
     Random r = new Random();
 
-    @Autowired
+    //@Autowired
     AccountRepository repository;
+
+    public NoTransactionsService(final AccountRepository repository) {
+        this.repository = repository;
+    }
 
     @PostConstruct
     public void init() {

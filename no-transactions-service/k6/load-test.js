@@ -3,7 +3,7 @@ import {
   SchemaRegistry,
   SCHEMA_TYPE_JSON,
 } from "k6/x/kafka";
-import { randomIntBetween } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
+import { randomIntBetween } from 'https://jslib.k6.io/k6-utils/1.4.0/index.js';
 
 const writer = new Writer({
   brokers: [`${__ENV.KAFKA_URL}`],
